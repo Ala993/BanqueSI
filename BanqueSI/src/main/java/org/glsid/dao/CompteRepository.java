@@ -1,5 +1,8 @@
 package org.glsid.dao;
 
-public interface CompteRepository {
+import org.glsid.entities.Compte;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CompteRepository extends JpaRepository<Compte, String> {
 
 }
